@@ -1,0 +1,34 @@
+
+#post_header{
+  border-bottom: 2px solid black;
+}
+
+
+#post_main_icon,#post_main_heading,#post_main_cam{
+    display: inline;
+}
+
+
+#post_main_icon{
+    color: darkslategrey;
+    font-size: 3.5em;
+    
+}
+
+#post_main_heading{
+    color : darkslategrey;
+    position: relative;
+    bottom: 10px;
+    font-size: 2em;
+    left: 2%;
+}
+
+#post_main_cam{
+    color:darkslategrey;
+    font-size: 3.3em;
+    float: right;
+    position: relative;
+    right: 4%;
+}
+
+
