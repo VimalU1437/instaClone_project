@@ -1,0 +1,40 @@
+#upload_canvas{
+    border: 1px solid black;
+    width: 500px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 100px auto;
+    border-radius: 5px;
+    box-shadow: 2px 8px 8px;
+}
+
+#upload_canvas > input{
+    border: 2px solid black;
+    border-radius: 5px;
+    width: 75%;
+}
+
+#input_btn{
+    border: 0;
+    border-radius: 5px;
+    color: brown;
+    background: darkseagreen;
+    width: 100px;
+    height: 30px;
+    box-shadow: 2px 8px 8px;
+    
+}
+
+#input_btn:hover{
+    background-color: cornflowerblue;
+    transform: scale(1.1);
+}
+
+#input_btn:active{
+    background-color: darkseagreen;
+    transform: translateY(5px);
+}
+
