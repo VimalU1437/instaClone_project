@@ -14,14 +14,14 @@ export default function PostView (){
     const [fetchIndicator ,setFetchIndicator] = useState(true);
 
     useEffect(()=>{
-        setUserData([{name:"Siva",
-        location:"Bengaluru",
-        likes:64,
-        description: "Kick start your career",
-        PostImage: "./images/colour-lense.jpg",
-        date: "12/12/2000",
-        }
-        ])
+        fetch("https://insat-file-uploader-api.onrender.com/posts")
+        .then(res=>{return res.json()})
+        .then(data=>{
+            console.log(data);
+            setUserData(data);
+        }).catch(err=>{
+            console.log(err);
+        })
         // console.log("fetched");
     },[fetchIndicator]);
 

@@ -1,4 +1,5 @@
 import "./landingPage.css";
+import { Link } from "react-router-dom";
 
 export default function LandingPage(){
 
@@ -25,7 +26,7 @@ export default function LandingPage(){
           <span>a</span>
           <span>m</span>
         </h1>
-        <button className="main_btn" onClick={()=>{}}>Enter</button>
+        <Link to="/posts"><button className="main_btn">Enter</button></Link>
         </div>
       </>
     );
